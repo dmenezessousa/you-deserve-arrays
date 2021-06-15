@@ -2,7 +2,12 @@
 
 const prompt = require('prompt-sync')();
 
-let array = prompt('Enter an Array: ');
+let arr = prompt('Enter an Array: ');
 
-array = JSON.parse(array);
-console.log(array);
+const array = JSON.parse(arr);
+
+const lastArray = array.length -1;
+
+const lastItemArray = array[lastArray];
+
+console.log(lastItemArray);
